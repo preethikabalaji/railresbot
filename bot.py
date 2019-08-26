@@ -11,7 +11,7 @@ app = Flask(__name__)
 PAGE_ACCESS_TOKEN = ""
 
 @app.route('/', methods=['GET'])
-def verify():
+def analyze():
 	# Webhook verification
     if request.args.get("hub.mode") == "subscribe" and request.args.get("hub.challenge"):
         if not request.args.get("hub.verify_token") == "hello":
@@ -49,7 +49,7 @@ def check_for_greeting_messages(messaging_text):
 								if(messaging_text.lower() in greetlist1):
 									greetresp='I am Happy you liked it! Thank you for giving me an oppurtunity to serve you!!"'
 								else:	
-									greetresp='Hi! My name is RailBot. I can tell you details about your railway ticket status using PNR.\nType your 10 digit PNR: 1234567890"'
+									greetresp='Hi! My name is RailresBot. I can tell you details about your railway ticket status using PNR.\nType your 10 digit PNR: 1234567890"'
 								return greetresp,is_greetresp
 		else:
 			is_greetresp=False
