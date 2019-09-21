@@ -18,11 +18,11 @@
         },
         {"tag": "schedule",
          "patterns": ["What is today's schedule of trains" ],
-         "responses": ["hyderabad to mumbai"]
+         "responses": ["Chennai to Bangalore"]
         },
         {"tag": "payments",
-         "patterns":["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?"] ,
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+         "patterns":["Do you take credit cards?", "Do you accept Visa?", "Are you cash only?"] ,
+         "responses": ["We accept Rupay, VISA, Mastercard and AMEX", "We accept most major credit cards"]
         },
         {"tag": "opentoday",
          "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
@@ -34,7 +34,7 @@
         },
         {"tag": "book",
          "patterns": ["how to book ticket","can i buy a new ticket"],
-         "responses": ["go to our website and click buy option"]
+         "responses": ["go to our website and check for availability"]
 
         }
    ]
